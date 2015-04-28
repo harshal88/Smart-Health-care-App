@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context=".BMIFragmentActivity"
+    tools:targetApi="11" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Body Mass Index"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/txtbWeight"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/editbox_background_normal"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/weight_unit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:entries="@array/weight_units" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Height" />
+
+        <EditText
+            android:id="@+id/txtHeight"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/editbox_background_normal"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/height_unit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:entries="@array/height_units" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/bmi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/editbox_background_focus_yellow"
+        android:editable="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:minLines="3" />
+
+    <LinearLayout
+        android:id="@+id/layLinHor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCalculate"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtCalculate"
+            android:textStyle="bold"
+            android:background="@drawable/icon_highlight_rectangle"
+            android:textColor="@color/fntBlue" />
+
+        <Button
+            android:id="@+id/btnCalcIdeal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txtCalcIdeal"
+            android:textStyle="bold"
+            android:background="@drawable/icon_highlight_rectangle"
+            android:textColor="@color/fntBlue" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClear"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="@string/txtClear"
+        android:textStyle="bold"
+        android:background="@drawable/icon_highlight_rectangle"
+        android:textColor="@color/fntBlue" />
+
+</LinearLayout>

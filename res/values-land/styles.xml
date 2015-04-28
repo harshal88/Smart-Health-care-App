@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="chart">
+        <item name="android:numColumns">4</item>
+    </style>
+
+</resources>

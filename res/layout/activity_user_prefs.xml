@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+           android:textStyle="bold"
+            android:text="Thanks for using Smart HealthCare  Please enter your user details here.  It&apos;s optional, anonymous, and will really help us understand different people&apos;s running preferences." >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:text="Age"
+            android:textStyle="bold" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/TextAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:hint="Age"
+                android:inputType="number"
+                android:lines="1" >
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/RadioGroup01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="2"
+                android:orientation="horizontal" 
+                android:textStyle="bold">
+
+                <RadioButton
+                    android:id="@+id/ButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Male"
+                    android:textSize="14sp"
+                   
+                    android:textStyle="bold" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Female"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                     >
+                </RadioButton>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20sp"
+                android:text="Running Frequency:"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextFreq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="20sp"
+                android:text="Less than once a month"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/SeekCycleFreq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="12sp"
+            android:layout_marginTop="2sp"
+            android:max="399"
+            android:minHeight="30sp"
+            android:nextFocusDown="@+id/TextZipHome"
+            android:thumb="@drawable/icon48"
+            android:thumbOffset="0sp" >
+        </SeekBar>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ZipLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:text="Home ZIP"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/TextZipHome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Home"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/TextZipWork"
+                    android:textStyle="bold" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ZipLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="Work ZIP"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/TextZipWork"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginRight="2sp"
+                    android:hint="Work "
+                    android:inputType="number"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/TextZipSchool"
+                    android:textStyle="bold" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ZipLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:text="School ZIP"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/TextZipSchool"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="School"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/TextEmail" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="20sp"
+            android:text="Email address:  for news and updates !!"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/TextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:hint="email address"
+            android:inputType="textEmailAddress"
+            android:lines="1" >
+        </EditText>
+    </LinearLayout>
+
+</ScrollView>

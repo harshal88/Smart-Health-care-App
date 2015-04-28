@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=${charset}"/>
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+    <link rel="stylesheet" href="style.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+
+    <title>Clover</title>
+</head>
+
+<body style="min-width: 200px;">
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A summary of the projects overall coverage.">Coverage</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <span>
+                    82 classes,
+                    0 /
+                    2 455 elements
+                </span>
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A summary of results of all tests that were run.">Test results</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:testresults'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                <span>
+                    0 / 0 tests
+                    (0 secs)
+                </span>
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                            </div>
+        </div>
+
+    
+    
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="The most complex packages in the project.">Most complex packages</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table>
+                                            
+                                                <tr><td>1. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td><a class="tag" href="javapkg:com.unique.smarthealthcare">com.unique.smarthealthcare</a> (530)</td></tr>
+                                            
+                                                <tr><td>2. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div></div></div></td><td><a class="tag" href="javapkg:android.support.v7.appcompat">android.support.v7.appcompat</a> (0)</td></tr>
+                                            
+                                                <tr><td>3. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div></div></div></td><td><a class="tag" href="javapkg:com.google.android.gms">com.google.android.gms</a> (0)</td></tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="The most complex classes in the project.">Most complex classes</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table>
+                                            
+                                                <tr><td>1. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/com/unique/smarthealthcare/BMIFragmentActivity.java#25_14"  title="com.unique.smarthealthcare.BMIFragmentActivity">BMIFragmentActivity</a>
+                            (53)
+                        </td></tr>
+                                            
+                                                <tr><td>2. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/com/unique/smarthealthcare/RecordingActivity.java#44_14"  title="com.unique.smarthealthcare.RecordingActivity">RecordingActivity</a>
+                            (53)
+                        </td></tr>
+                                            
+                                                <tr><td>3. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/com/unique/smarthealthcare/HomeActivity.java#39_14"  title="com.unique.smarthealthcare.HomeActivity">HomeActivity</a>
+                            (36)
+                        </td></tr>
+                                            
+                                                <tr><td>4. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/com/unique/smarthealthcare/DbAdapter.java#15_14"  title="com.unique.smarthealthcare.DbAdapter">DbAdapter</a>
+                            (34)
+                        </td></tr>
+                                            
+                                                <tr><td>5. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/com/unique/smarthealthcare/RecordingService.java#24_14"  title="com.unique.smarthealthcare.RecordingService">RecordingService</a>
+                            (31)
+                        </td></tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A list of classes that have the highest complexity and least coverage. These pose the greatest potential risk to the project.">
+                        Top 20 project risks</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:toprisks'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div>
+                    
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/ShowMapActivity.java#19_14"
+                               style="font-size: 25px;color:#e4051a"
+                               title="Average Method Complexity - 3,6 , Coverage - 0% ">ShowMapActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/BMIFragmentActivity.java#25_14"
+                               style="font-size: 22px;color:#e4051a"
+                               title="Average Method Complexity - 2,944 , Coverage - 0% ">BMIFragmentActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/UserPrefActivity.java#22_14"
+                               style="font-size: 20px;color:#e4051a"
+                               title="Average Method Complexity - 2,5 , Coverage - 0% ">UserPrefActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/SmartHealthCareApplication.java#10_14"
+                               style="font-size: 20px;color:#e4051a"
+                               title="Average Method Complexity - 2,5 , Coverage - 0% ">SmartHealthCareApplication</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/StopwatchFragmentActivity.java#19_14"
+                               style="font-size: 19px;color:#e4051a"
+                               title="Average Method Complexity - 2,286 , Coverage - 0% ">StopwatchFragmentActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/GraphFragments.java#41_14"
+                               style="font-size: 18px;color:#e4051a"
+                               title="Average Method Complexity - 2,231 , Coverage - 0% ">GraphFragments</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/ChangePasswordFragment.java#16_14"
+                               style="font-size: 18px;color:#e4051a"
+                               title="Average Method Complexity - 2,2 , Coverage - 0% ">ChangePasswordFragment</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/DistanceVsTimeGraphActivity.java#26_14"
+                               style="font-size: 17px;color:#e4051a"
+                               title="Average Method Complexity - 2 , Coverage - 0% ">DistanceVsTimeGraphActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/SaveTripActivity.java#90_8"
+                               style="font-size: 17px;color:#e4051a"
+                               title="Average Method Complexity - 2 , Coverage - 0% ">SaveTripActivity.CheckListener</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/RecordingActivity.java#44_14"
+                               style="font-size: 17px;color:#e4051a"
+                               title="Average Method Complexity - 1,963 , Coverage - 0% ">RecordingActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/RegisterActivity.java#22_14"
+                               style="font-size: 17px;color:#e4051a"
+                               title="Average Method Complexity - 1,833 , Coverage - 0% ">RegisterActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/HomeActivity.java#39_14"
+                               style="font-size: 17px;color:#e4051a"
+                               title="Average Method Complexity - 1,8 , Coverage - 0% ">HomeActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/DbAdapter.java#15_14"
+                               style="font-size: 16px;color:#e4051a"
+                               title="Average Method Complexity - 1,789 , Coverage - 0% ">DbAdapter</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/StartTripActivity.java#27_14"
+                               style="font-size: 16px;color:#e4051a"
+                               title="Average Method Complexity - 1,667 , Coverage - 0% ">StartTripActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/SpeedVsTimeGraphActivity.java#27_14"
+                               style="font-size: 16px;color:#e4051a"
+                               title="Average Method Complexity - 1,6 , Coverage - 0% ">SpeedVsTimeGraphActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/RecordingService.java#24_14"
+                               style="font-size: 15px;color:#e4051a"
+                               title="Average Method Complexity - 1,476 , Coverage - 0% ">RecordingService</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/LoginDataBaseAdapter.java#10_14"
+                               style="font-size: 15px;color:#e4051a"
+                               title="Average Method Complexity - 1,455 , Coverage - 0% ">LoginDataBaseAdapter</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/ListTrackFragment.java#29_14"
+                               style="font-size: 15px;color:#e4051a"
+                               title="Average Method Complexity - 1,4 , Coverage - 0% ">ListTrackFragment</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/LoginActivity.java#24_14"
+                               style="font-size: 15px;color:#e4051a"
+                               title="Average Method Complexity - 1,357 , Coverage - 0% ">LoginActivity</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/com/unique/smarthealthcare/Splashscreen.java#13_14"
+                               style="font-size: 14px;color:#e4051a"
+                               title="Average Method Complexity - 1,333 , Coverage - 0% ">Splashscreen</a>
+                                                            </div>
+            </div>
+        </div>
+
+            <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A list of methods least tested, ranked in decreasing complexity.">Least tested methods</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:quickwins'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table>
+                                            <tr>
+                            <td align="right">1.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="BMIFragmentActivity.getInput()&#160;:&#160;double[]" href="javamethod:/com/unique/smarthealthcare/BMIFragmentActivity.java#263_2">BMIFragmentActivity.getInput(<wbr>)<wbr>&#160;:&#160;double[]</a> (11)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">2.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="DistanceVsTimeGraphActivity.openDistanceVSTimeChart(TripData)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/DistanceVsTimeGraphActivity.java#69_2">DistanceVsTimeGraphActivity.openDistanceVSTimeChart(<wbr>TripData)<wbr>&#160;:&#160;void</a> (5)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">3.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="GraphFragments.openDistanceVSDateChart()&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/GraphFragments.java#170_2">GraphFragments.openDistanceVSDateChart(<wbr>)<wbr>&#160;:&#160;void</a> (5)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">4.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="GraphFragments.openPurposeOfTripsChart()&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/GraphFragments.java#278_2">GraphFragments.openPurposeOfTripsChart(<wbr>)<wbr>&#160;:&#160;void</a> (11)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">5.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="SpeedVsTimeGraphActivity.openSpeedVSTimeChart(TripData)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/SpeedVsTimeGraphActivity.java#70_2">SpeedVsTimeGraphActivity.openSpeedVSTimeChart(<wbr>TripData)<wbr>&#160;:&#160;void</a> (3)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">6.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="RecordingActivity.updateStatus(int,Location,float,float,float)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/RecordingActivity.java#280_2">RecordingActivity.updateStatus(<wbr>int,<wbr>Location,<wbr>float,<wbr>float,<wbr>float)<wbr>&#160;:&#160;void</a> (11)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">7.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="ShowMapActivity.setUpMapIfNeeded()&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/ShowMapActivity.java#62_2">ShowMapActivity.setUpMapIfNeeded(<wbr>)<wbr>&#160;:&#160;void</a> (12)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">8.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="UserPrefActivity.onCreate(Bundle)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/UserPrefActivity.java#36_5">UserPrefActivity.onCreate(<wbr>Bundle)<wbr>&#160;:&#160;void</a> (10)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">9.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="TripData.populateDetails()&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/TripData.java#85_2">TripData.populateDetails(<wbr>)<wbr>&#160;:&#160;void</a> (3)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">10.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="UserPrefActivity.savePreferences()&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/UserPrefActivity.java#118_5">UserPrefActivity.savePreferences(<wbr>)<wbr>&#160;:&#160;void</a> (3)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">11.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="BMIFragmentActivity.resultOfBmi(double)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/BMIFragmentActivity.java#163_2">BMIFragmentActivity.resultOfBmi(<wbr>double)<wbr>&#160;:&#160;void</a> (14)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">12.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="StopwatchFragmentActivity.onClick(View)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/StopwatchFragmentActivity.java#71_3">StopwatchFragmentActivity.onClick(<wbr>View)<wbr>&#160;:&#160;void</a> (4)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">13.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="RecordingActivity.onServiceConnected(ComponentName,IBinder)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/RecordingActivity.java#171_4">RecordingActivity.onServiceConnected(<wbr>ComponentName,<wbr>IBinder)<wbr>&#160;:&#160;void</a> (5)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">14.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="HomeActivity.onCreate(Bundle)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/HomeActivity.java#73_2">HomeActivity.onCreate(<wbr>Bundle)<wbr>&#160;:&#160;void</a> (3)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">15.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="RecordingActivity.onCreate(Bundle)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/RecordingActivity.java#77_2">RecordingActivity.onCreate(<wbr>Bundle)<wbr>&#160;:&#160;void</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">16.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="ChangePasswordFragment.onClick(View)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/ChangePasswordFragment.java#56_6">ChangePasswordFragment.onClick(<wbr>View)<wbr>&#160;:&#160;void</a> (6)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">17.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="BMIFragmentActivity.calcIdealWeightAdjustment(double,double[],String)&#160;:&#160;String" href="javamethod:/com/unique/smarthealthcare/BMIFragmentActivity.java#230_2">BMIFragmentActivity.calcIdealWeightAdjustment(<wbr>double,<wbr>double[],<wbr>String)<wbr>&#160;:&#160;String</a> (5)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">18.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="ListTrackFragment.populateList(ListView)&#160;:&#160;void" href="javamethod:/com/unique/smarthealthcare/ListTrackFragment.java#75_2">ListTrackFragment.populateList(<wbr>ListView)<wbr>&#160;:&#160;void</a> (5)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">19.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="TripData.addPointNow(Location,long,float)&#160;:&#160;boolean" href="javamethod:/com/unique/smarthealthcare/TripData.java#210_2">TripData.addPointNow(<wbr>Location,<wbr>long,<wbr>float)<wbr>&#160;:&#160;boolean</a> (3)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">20.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="HomeActivity.onOptionsItemSelected(MenuItem)&#160;:&#160;boolean" href="javamethod:/com/unique/smarthealthcare/HomeActivity.java#177_2">HomeActivity.onOptionsItemSelected(<wbr>MenuItem)<wbr>&#160;:&#160;boolean</a> (6)
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+</body>
+</html>

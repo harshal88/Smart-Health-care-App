@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.unique.smarthealthcare.Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#505050"
+        android:textSize="70sp" />
+
+    <FrameLayout
+        android:id="@+id/flLapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/llButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/bPause"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pause_button_selector"
+            android:contentDescription="@string/pause"
+            android:src="@drawable/pause"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/bStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/start_button_selector"
+            android:contentDescription="@string/start"
+            android:src="@drawable/start" />
+
+        <ImageButton
+            android:id="@+id/bStop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/stop_button_selector"
+            android:contentDescription="@string/stop"
+            android:src="@drawable/stop"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

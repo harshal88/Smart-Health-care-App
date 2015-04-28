@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ButtonNew"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/shoe1"
+        android:gravity="center_vertical"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/new_trip"
+        android:textSize="18sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="120dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/history"
+            android:gravity="center"
+            android:onClick="showHistory"
+             android:textStyle="bold" 
+            android:text="History" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="120dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/compass"
+            android:gravity="center"
+            android:onClick="showCompass"
+             
+            android:text="Compass" 
+             android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="120dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/graphs"
+            android:gravity="center"
+            
+            android:onClick="showGraphs"
+            android:text="Graphs"
+             android:textStyle="bold"  />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="120dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/bmi"
+            android:gravity="center"
+            android:onClick="showBMI"
+            android:text="BMI"
+             android:textStyle="bold"  />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide_right1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/slider"
+            android:text="Slide Right For Options"
+            android:textStyle="bold"
+            android:gravity="center_horizontal|center_vertical" android:layout_alignBottom="@id/slider"/>
+    </RelativeLayout>
+
+</LinearLayout>

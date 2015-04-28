@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <!-- the Local LogLevel for Analytics -->
+    <string name="ga_logLevel">verbose</string>
+
+    <!-- how often the dispatcher should fire -->
+    <integer name="ga_dispatchPeriod">30</integer>
+
+    <!-- Treat events as test events and don't send to google -->
+    <bool name="ga_dryRun">false</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <string name="com.unique.smarthealthcare.HomeActivity">Home Screen</string>
+    <string name="com.unique.smarthealthcare.RegisterActivity">Register Screen</string>
+    <string name="com.unique.smarthealthcare.RecordingActivity">Recording Screen</string>
+    <string name="com.unique.smarthealthcare.ListTrackFragment">History Screen</string>
+    <string name="com.unique.smarthealthcare.GraphFragments">Graphs Screen</string>
+    <string name="com.unique.smarthealthcare.BMIFragment">BMI Screen</string>
+    <string name="com.unique.smarthealthcare.CompassFragment">Compass Screen</string>
+    
+
+</resources>

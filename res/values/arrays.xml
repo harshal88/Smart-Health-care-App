@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="drawer_titles">
+        <item >Tracks</item>
+        <item >Compass</item>
+        <item >BMI</item>
+        <item >Stopwatch</item>
+        <item>Graphs</item>
+    </string-array>
+    <string-array name="weight_units">
+        <item >Kg</item>
+        <item >Lbs</item>
+    </string-array>
+     <string-array name="height_units">
+        <item >M</item>
+        <item >Ft</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/athlete1" android:duration="50" />
+    <item android:drawable="@drawable/athlete2" android:duration="50" />
+    <item android:drawable="@drawable/athlete3" android:duration="50" />
+    <item android:drawable="@drawable/athlete4" android:duration="50" />
+    <item android:drawable="@drawable/athlete5" android:duration="50" />
+    <item android:drawable="@drawable/athlete6" android:duration="50" />
+    <item android:drawable="@drawable/athlete7" android:duration="50" />
+    <item android:drawable="@drawable/athlete8" android:duration="50" />
+    <item android:drawable="@drawable/athlete9" android:duration="50" />
+    <item android:drawable="@drawable/athlete10" android:duration="50" />
+    <item android:drawable="@drawable/athlete11" android:duration="50" />
+    <item android:drawable="@drawable/athlete12" android:duration="50" />
+    <item android:drawable="@drawable/athlete13" android:duration="50" />
+    <item android:drawable="@drawable/athlete14" android:duration="50" />
+    <item android:drawable="@drawable/athlete15" android:duration="50" />
+    <item android:drawable="@drawable/athlete16" android:duration="50" />
+    <item android:drawable="@drawable/athlete17" android:duration="50" />
+    <item android:drawable="@drawable/athlete18" android:duration="50" />
+    <item android:drawable="@drawable/athlete19" android:duration="50" />
+    <item android:drawable="@drawable/athlete20" android:duration="50" />
+    <item android:drawable="@drawable/athlete21" android:duration="50" />
+    <item android:drawable="@drawable/athlete22" android:duration="50" />
+    <item android:drawable="@drawable/athlete23" android:duration="50" />
+    <item android:drawable="@drawable/athlete24" android:duration="50" />
+    <item android:drawable="@drawable/athlete25" android:duration="50" />
+
+</animation-list>

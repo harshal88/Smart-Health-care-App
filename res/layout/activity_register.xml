@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/register"
+        android:textStyle="bold" />
+
+ 
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/running_athlete"
+                android:layout_width="150dip"
+                android:layout_height="150dip"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/password_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/running_athlete"
+                android:layout_margin="15dip"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" 
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/repassword_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_edt"
+                android:layout_margin="15dip"
+                android:ems="10"
+                android:hint="Verify Password"
+                android:inputType="textPassword" 
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/repassword_edt"
+                android:layout_margin="15dip"
+                android:text="@string/showpassword" 
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/security_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checkBox1"
+                android:layout_margin="15dip"
+                android:ems="10"
+                android:hint="Security Hint"
+                android:textStyle="bold" >
+            </EditText>
+        </RelativeLayout>
+
+
+</RelativeLayout>

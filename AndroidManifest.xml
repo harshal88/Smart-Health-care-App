@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unique.smarthealthcare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".SmartHealthCareApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/athlete1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Google Analytics Version v4 needs this value for easy tracking -->
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker" />
+
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.unique.smarthealthcare.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RecordingActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/recording_title"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaveTripActivity"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserPrefActivity"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".RecordingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MainInput"
+            android:label="@string/recording_title"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShowMapActivity"
+            android:label="Trip Map"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAutlxT0_B-zzOQ0bMsYOfQ4pCyQJqDR4c" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".StartTripActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:label="Chart" >
+        </activity>
+        <activity
+            android:name="com.unique.smarthealthcare.DistanceVsTimeGraphActivity"
+            android:label="Chart" >
+        </activity>
+         <activity
+            android:name="com.unique.smarthealthcare.DistanceVsDateGraphActivity"
+            android:label="Chart" >
+        </activity>
+        <activity
+            android:name="com.unique.smarthealthcare.SpeedVsTimeGraphActivity"
+            android:label="Chart" >
+        </activity>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <!-- TODO: Replace "com.example.hellomap" with your package name -->
+
+    <permission
+        android:name="com.unique.smarthealthcare.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.unique.smarthealthcare.permission.MAPS_RECEIVE" />
+
+    <!-- The following four permissions -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- The following two permissions are not required to use Google Maps Android API v2, but are recommended. -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+</manifest>
